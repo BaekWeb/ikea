@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* footer style */
+.footer {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.footer .gnb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(19,19,19,0.2);
+}
+.footer .gnb .box {
+  display: flex;
+  justify-content: flex-start;
+  width: 768px;
+}
+.footer .gnb .box > li {
+  flex: 1;
+}
+.footer .gnb .box > li > h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer .gnb .box > li > ul {
+  margin: 20px 0 0 0
+}
+.footer .gnb .box > li > ul > li {
+  font-size: 13px;
+  line-height: 40px;
+}
+.footer .copy {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.footer .copy > strong {
+  font-size: 15px;
+}
+.footer .copy > ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 15px;
+}
+.footer .ikea_korea {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.footer .ikea_korea > li {
+  font-size: 15px;
+  line-height: 25px;
+}
+.footer .ikea_korea > li:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer > p {
+  padding: 40px 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* tablet - 768px ~ 1100px*/
+@media (min-width: 768px) and (max-width: 1100px) {
+  .footer .copy {
+    flex-flow: column;
+    align-items: center;
+  }
+  .footer .copy > strong {
+    font-size: 15px;
+  }
+  .footer .copy > ul {
+    margin: 20px 0 0 0;
+  }
+}
+
+/* mo -  ~ 767px*/
+@media all and (max-width: 767px) {
+  .footer .gnb {
+    padding: 0;
+  }
+  .footer .gnb .box {
+    flex-flow: column;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .footer .gnb .box > li {
+    flex: 1;
+    padding: 20px 0;
+  }
+  .footer .gnb .box > li > h3 {
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .footer .gnb .box > li > h3:hover::after {
+    transform: rotate(180deg)
+  }
+  .footer .gnb .box > li > h3::after {
+    content: "\e942";
+    display: block;
+    font-family: 'xeicon';
+    font-size: 18px;
+    transition: 0.5s;
+  }
+  .footer .gnb .box > li > ul {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+  .footer .gnb .box > li > ul.drop {
+    height: auto;
+  }
+  .footer .copy {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .footer .copy > strong {
+    font-size: 15px;
+  }
+  .footer .copy > ul {
+    display: none;
+  }
+  .footer .ikea_korea {
+    margin: 20px auto;
+  }
+  .footer .ikea_korea > li {
+    font-size: 13px;
+  }
+  .footer .ikea_korea > li:first-child {
+    font-size: 15px;
+  }
+  .footer > p {
+    padding: 20px;
+    font-size: 13px;
+  }
+}

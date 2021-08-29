@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* today style */
+.today {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 80px 20px 0 20px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(37,37,37, 0.2);
+}
+.today > h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.today > p {
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+.today > div {
+  width: 100%;
+  background: url("../image/common/c5ab7216e7d352d1d8f42a4061e8b7ae.jpg") no-repeat center;
+  background-size: cover;
+}
+.today > div a {
+  padding-bottom: 65%;
+}
+.today > strong  {
+  font-size: 15px;
+  font-weight: bold;
+  color: #131313;
+}
